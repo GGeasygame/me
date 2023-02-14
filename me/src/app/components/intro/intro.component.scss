@@ -1,0 +1,69 @@
+.welcome-text-wrapper {
+  width: 100%;
+  margin-top: 10em;
+}
+
+#welcome {
+  font-family: 'Kanit', sans-serif;
+}
+
+#welcome-title {
+  font-size: 5rem;
+  animation-name: welcome-title-entry;
+  animation-duration: 12s;
+  margin-left: 100vw;
+
+  @keyframes welcome-title-entry {
+    0% {
+      display: block;
+      left: 0;
+      margin-left: -100%;
+    }
+    40% {
+      margin-left: 35%;
+    }
+    50% {
+      margin-left: 35%;
+    }
+    100% {
+      margin-left: 100vw;
+      margin-right: -100%;
+      display: none;
+    }
+  }
+}
+#welcome-subtitle {
+  font-size: 3rem;
+  animation-name: welcome-subtitle-entry;
+  animation-duration: 10s;
+  margin-left: 100vw;
+
+  @keyframes welcome-subtitle-entry  {
+    0% {
+      display: block;
+      left: 0;
+      margin-left: -100%;
+    }
+    40% {
+      margin-left: 50%;
+    }
+    60% {
+      margin-left: 50%;
+    }
+    100% {
+      margin-left: 100vw;
+      margin-right: -100%;
+      display: none;
+    }
+  }
+}
+
+#introduction-h1 {
+
+}
+
+#introduction-h2 {
+
+}
+
+
