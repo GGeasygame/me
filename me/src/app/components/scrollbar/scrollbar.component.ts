@@ -23,7 +23,6 @@ export class ScrollbarComponent implements OnInit {
   }
 
   scroll(page: number) {
-    console.log("hi")
     window.scrollTo({top: (page - 1) * this.pageHeight, left: 0, behavior: "smooth"})
   }
 
