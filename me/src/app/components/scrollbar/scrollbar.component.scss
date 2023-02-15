@@ -2,68 +2,25 @@
   width: 100vw;
   height: 40px;
   display: flex;
-}
 
-.scrollbar-item {
-  flex: 1 1 0;
-  position: relative;
+  .scrollbar-item {
+    flex: 1 1 0;
+    position: relative;
+    height: 100%;
+  }
 }
 
 .page-num {
-  display: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Azeret Mono', monospace;
   color: #f0ffff;
   font-size: 1.5rem;
+
+  opacity: 0;
+  transition: opacity 0.3s;
 }
-
-.highlighted {
-  .page-num {
-    display: inline;
-  }
-
-  .podium {
-    animation-name: animate-podium;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    box-shadow: azure 0 0 10px 10px;
-  }
-
-  @keyframes animate-podium {
-    from {
-      height: 0.2em;
-      box-shadow: azure 0 0 10px 2px;
-    }
-    to {
-      height: 0.5em;
-      box-shadow: azure 0 0 10px 10px;
-    }
-  }
-}
-
-.podium:hover {
-  box-shadow: #eeee77 0 0 10px 10px;
-  animation-name: animate-podium-hover;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-.podium:hover ~ .page-num {
-  display: inline;
-}
-
-@keyframes animate-podium-hover {
-  from {
-    height: 0.2em;
-    box-shadow: azure 0 0 10px 2px;
-  }
-  to {
-    height: 0.5em;
-    box-shadow: #eeee77 0 0 10px 10px;
-  }
-}
-
 
 .podium {
   position: absolute;
@@ -74,4 +31,33 @@
   height: 0.2em;
   background-color: #000000;
   box-shadow: azure 0 0 10px 2px;
+  transition: height 0.5s, box-shadow 0.5s;
 }
+
+.highlighted {
+  .page-num {
+    opacity: 100%;
+    transition: opacity 0.3s;
+  }
+
+  .podium {
+    box-shadow: azure 0 0 10px 10px;
+    height: 0.5em;
+    transition: height 1s, box-shadow 1s;
+  }
+
+  height: 0.5em;
+  transition: height 1s, box-shadow 1s;
+}
+
+.podium:hover {
+  box-shadow: #eeee77 0 0 10px 10px;
+  height: 0.5em;
+  transition: height 1s, box-shadow 1s;
+}
+.podium:hover ~ .page-num {
+  opacity: 100%;
+  transition: opacity 0.3s;
+}
+
+

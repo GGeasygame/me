@@ -27,6 +27,11 @@ h1, h2, h3, h4, h5, h6, p {
   --page-height: 900px;
 }
 
+p, a {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5rem;
+}
+
 /* scrollbar */
 
 ::-webkit-scrollbar {
