@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-intro',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro.component.scss']
 })
 export class IntroComponent implements OnInit {
+  skipped = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  @HostListener('document:click', ['$event'])
+  documentClick(event: MouseEvent) {
+    this.skipped = true;
+  }
 }
