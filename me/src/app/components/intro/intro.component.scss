@@ -31,7 +31,7 @@
         50% {
           margin-left: 35%;
         }
-        100% {
+        80% {
           margin-left: 100vw;
           margin-right: -100%;
           display: none;
@@ -59,7 +59,7 @@
         60% {
           margin-left: 50%;
         }
-        100% {
+        80% {
           margin-left: 100vw;
           margin-right: -100%;
           display: none;
@@ -69,7 +69,7 @@
   }
 
   #introduction-h1 {
-    animation-delay: 10s;
+    animation-delay: 8s;
     animation-name: introduction-h1-animation;
     animation-duration: 10s;
     margin-left: 100vw;
@@ -88,7 +88,7 @@
       50% {
         margin-left: 50%;
       }
-      100% {
+      80% {
         margin-left: 100vw;
         margin-right: -100%;
         display: none;
@@ -97,7 +97,7 @@
   }
 
   #introduction-h2 {
-    animation-delay: 11s;
+    animation-delay: 9s;
     animation-name: introduction-h2-animation;
     animation-duration: 10s;
     margin-left: 100vw;
@@ -116,7 +116,7 @@
       50% {
         margin-left: 47%;
       }
-      100% {
+      80% {
         margin-left: 100vw;
         margin-right: -100%;
         display: none;
@@ -149,7 +149,7 @@
   .animate-autobiography {
     animation-name: autobiography-animation;
     animation-duration: 5s;
-    animation-delay: 20s;
+    animation-delay: 17s;
     opacity: 0;
     animation-fill-mode: forwards;
   }

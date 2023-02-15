@@ -30,11 +30,22 @@
     animation-fill-mode: forwards;
     box-shadow: azure 0 0 10px 10px;
   }
+
+  @keyframes animate-podium {
+    from {
+      height: 0.2em;
+      box-shadow: azure 0 0 10px 2px;
+    }
+    to {
+      height: 0.5em;
+      box-shadow: azure 0 0 10px 10px;
+    }
+  }
 }
 
 .podium:hover {
   box-shadow: #eeee77 0 0 10px 10px;
-  animation-name: animate-podium;
+  animation-name: animate-podium-hover;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
@@ -42,14 +53,17 @@
   display: inline;
 }
 
-@keyframes animate-podium {
+@keyframes animate-podium-hover {
   from {
     height: 0.2em;
+    box-shadow: azure 0 0 10px 2px;
   }
   to {
     height: 0.5em;
+    box-shadow: #eeee77 0 0 10px 10px;
   }
 }
+
 
 .podium {
   position: absolute;
@@ -59,4 +73,5 @@
   width: 7em;
   height: 0.2em;
   background-color: #000000;
+  box-shadow: azure 0 0 10px 2px;
 }
