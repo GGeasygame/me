@@ -1,3 +1,35 @@
 .body {
   height: var(--page-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.project-text-wrapper {
+  width: 60%;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 3em;
+
+  a, a:checked {
+    display: inline;
+    width: max-content;
+    color: aquamarine;
+    text-decoration: none;
+  }
+
+  a:hover {
+    box-shadow: 0 0 5px 5px blue;
+    background-color: blue;
+    font-size: 1.1rem;
+  }
+}
+

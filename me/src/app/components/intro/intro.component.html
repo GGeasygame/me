@@ -8,10 +8,12 @@
     <h2 id="introduction-h2">I am</h2>
     <h1 id="introduction-h1">Jonas Kaufmann</h1>
   </div>
-  <div id="autobiography" [class.show]="!skipped">
-    <p>I'm a Swiss software developer</p>
-    <p>I have an apprenticeship at CSS Insurance</p>
-    <p>My hobbies are gaming and playing music</p>
+  <div id="autobiography-wrapper">
+    <div id="autobiography" [class.animate-autobiography]="!skipped">
+      <p>I'm a Swiss software developer</p>
+      <p>I have an apprenticeship at CSS Insurance</p>
+      <p>My hobbies are gaming and playing music</p>
+    </div>
   </div>
 </div>
 </div>

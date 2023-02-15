@@ -1,4 +1,10 @@
 app-scrollbar {
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  width: max-content;
+  height: max-content;
+}
+
+body {
+  height: 100%;
 }

@@ -1,5 +1,62 @@
 #scrollbar {
-  width: 100%;
+  width: 100vw;
   height: 40px;
-  background-color: red;
+  display: flex;
+}
+
+.scrollbar-item {
+  flex: 1 1 0;
+  position: relative;
+}
+
+.page-num {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Azeret Mono', monospace;
+  color: #f0ffff;
+  font-size: 1.5rem;
+}
+
+.highlighted {
+  .page-num {
+    display: inline;
+  }
+
+  .podium {
+    animation-name: animate-podium;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    box-shadow: azure 0 0 10px 10px;
+  }
+}
+
+.podium:hover {
+  box-shadow: #eeee77 0 0 10px 10px;
+  animation-name: animate-podium;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.podium:hover ~ .page-num {
+  display: inline;
+}
+
+@keyframes animate-podium {
+  from {
+    height: 0.2em;
+  }
+  to {
+    height: 0.5em;
+  }
+}
+
+.podium {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 7em;
+  height: 0.2em;
+  background-color: #000000;
 }

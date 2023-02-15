@@ -1,3 +1,10 @@
 <div id="scrollbar">
-
+  <div [class.highlighted]="isHighlighted(1)" class="scrollbar-item">
+    <div class="podium" (click)="scroll(1)"></div>
+    <span class="page-num">1</span>
+  </div>
+  <div [class.highlighted]="isHighlighted(2)" class="scrollbar-item">
+    <div class="podium" (click)="scroll(2)"></div>
+    <span class="page-num">2</span>
+  </div>
 </div>
